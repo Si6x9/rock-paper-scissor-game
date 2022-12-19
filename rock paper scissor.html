@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors game</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <!-- css -->
+    <link rel="stylesheet" href="rock paper scissor.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bd">
+        <!-- title -->
+        <header>
+            <h1><img src="img/logo.png" alt=""> Rock Paper Scissors game </h1>
+        </header>
+
+        <div class="container">
+
+            <!-- boxes -->
+            <div class="boxes">
+                <div id="rock" class="box">🪨</div>
+                <div id="paper" class="box">🧻</div>
+                <div id="scissor" class="box">✂️</div>
+            </div>
+
+            <!-- scores -->
+            <div class="scores">
+                <h1 id="computer score"></h1>
+                <h1 id="your score"></h1>
+                <h1 id="draw"></h1>
+            </div>
+            <div id="reset"><span>reset</div></span>
+
+            <!-- results -->
+            <div id="result"></div>
+
+        </div>
+    </div>
+
+    <!-- audios -->
+    <audio id="ppr" controls style="display: none;">
+        <source src="./sound/paper.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="rck" controls style="display: none;">
+        <source src="./sound/rock.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="scis" controls style="display: none;">
+        <source src="./sound/scissor.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="ret" controls style="display: none;">
+        <source src="./sound/reset.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="win" controls style="display: none;">
+        <source src="./sound/victory.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- javascript -->
+    <script src="rock paper scissor.js"></script>
+</body>
+</html>
